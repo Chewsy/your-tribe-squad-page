@@ -1,34 +1,105 @@
+/* Basis styling */
 body {
-    font-family: "Lato", sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Header */
+header {
+  background-color: #d50909;
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap; /* knoppen netjes op mobiel */
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #d50909;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Main layout */
+main {
+  display: flex;        /* sidebar en rechtersectie naast elkaar */
+  min-height: 100vh;
+}
+
+/* Sidebar */
 .sidenav {
-    height:100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: blue;
-    overflow-x: hidden;
-    padding-top: 20px;
+  width: 200px;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
-.sidenav a {
-padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #010101;
+.sidenav h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.sidenav .card {
+  margin-bottom: 1rem;
+}
+
+.sidenav img {
+  max-width: 100%;
   display: block;
+  border-radius: 4px;
 }
 
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
+/* Rechter sectie */
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  flex: 1;             /* neemt resterende ruimte */
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column;  /* sidebar boven grid */
+  }
+
+  .sidenav {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
