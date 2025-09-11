@@ -102,4 +102,73 @@ main {
   .grid {
     grid-template-columns: 1fr;
   }
+  
+}
+/* Basis layout */
+main {
+  display: flex;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+/* Sidebar */
+.sidenav {
+  width: 200px;
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Rechter sectie */
+.main {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .sidenav {
+    width: 100%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  nav button {
+    width: 100%;
+  }
+
+  .grid img {
+    border-radius: 4px;
+  }
 }
