@@ -1,0 +1,128 @@
+/* Basis styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9; /* lichtgrijs */
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #0d1b2a; 
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1b263b; 
+  color: #e0e1dd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #00b4d8; 
+  color: #fff;
+}
+
+nav button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* Werkplekken pagina styling */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 kaarten per rij */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 80%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #1b263b;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 profielen per rij */
+  }
+  .work-grid {
+    grid-template-columns: 1fr; /* 1 kaart per rij */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  nav button {
+    width: 100%;
+  }
+
+  .grid img {
+    height: 150px;
+    border-radius: 6px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}
