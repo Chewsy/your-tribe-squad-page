@@ -1,9 +1,20 @@
+# Squad page - Team AKC
 
-# Squad page
+## De teamleden
 
-Ontwerp en maak met een team een Squad Page met HTML, CSS en JS.
+## Live demo
+[Live demo](edu.nl/vdfr7)
 
-De instructie van deze leertaak staan in de [INSTRUCTIONS](https://github.com/fdnd-task/your-tribe-squad-page/blob/main/docs/INSTRUCTIONS.md)
+![QR code live demo](https://edu.nl/vdfr7~?format=png)
+
+## Roadmap
+
+## Mockups
+
+## Code
+
+##
+
 
 ## Licentie
 
