@@ -24,11 +24,9 @@ De afgelopen 3 weken zijn wij stapsgewijs te werk gegaan om de squadpage te make
 
 
 
-![Mobile](https://i.ibb.co/Kpkdn5Lv/mobile-black.png)
-
-![Tablet](https://i.ibb.co/kTRCShf/tablet-black.png)
-
-![Laptop](https://i.ibb.co/whxDrhFp/laptop.png)
+<img src="https://i.ibb.co/Kpkdn5Lv/mobile-black.png" width="100" alt="Mobile">
+<img src="https://i.ibb.co/kTRCShf/tablet-black.png" width="120" alt="Tablet">
+<img src="https://i.ibb.co/whxDrhFp/laptop.png" width="150" alt="Laptop">
 
 
 ## Code
