@@ -25,20 +25,20 @@ nav {
   gap: 0.25rem;
 }
 
-nav button {
+nav .button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
-  background-color: #1b263b; 
+  background-color: #1b263b;
   color: #e0e1dd;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
+  width: auto;
 }
 
-nav button:hover {
-  background-color: #00b4d8; 
+nav .button:hover {
+  background-color: #00b4d8;
   color: #fff;
 }
 

@@ -27,7 +27,7 @@ nav {
   align-items: center;
 }
 
-nav button {
+nav .button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;
@@ -36,10 +36,10 @@ nav button {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
+  width: auto;
 }
 
-nav button:hover {
+nav .button:hover {
   background-color: #00b4d8;
   color: #fff;
 }
