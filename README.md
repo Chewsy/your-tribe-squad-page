@@ -21,6 +21,16 @@ De afgelopen 3 weken zijn wij stapsgewijs te werk gegaan om de squadpage te make
 
 ## Mockups
 
+
+
+
+![Mobile](https://i.ibb.co/Kpkdn5Lv/mobile-black.png)
+
+![Tablet](https://i.ibb.co/kTRCShf/tablet-black.png)
+
+![Laptop](https://i.ibb.co/whxDrhFp/laptop.png)
+
+
 ## Code
 
 ##
