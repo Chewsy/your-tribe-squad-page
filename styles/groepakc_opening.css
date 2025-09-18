@@ -69,7 +69,7 @@ section p {
 }
 
 section a {
-  color: #00b4d8;
+  color: white;
   font-weight: bold;
   margin-bottom: 1rem;
   transition: color 0.3s ease;
