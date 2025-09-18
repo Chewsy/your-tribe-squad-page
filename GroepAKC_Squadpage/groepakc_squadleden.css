@@ -1,0 +1,129 @@
+/* Basis styling*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9; 
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #0d1b2a; 
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1b263b; 
+  color: #e0e1dd;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+nav button:hover {
+  background-color: #00b4d8; 
+  color: #fff;
+}
+
+/* Main layout */
+section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* squadpage */
+.main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.main h2 {
+  color: #0d1b2a;
+  margin-bottom: 1rem;
+}
+
+/* Grid styling voor squadleden */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* standaard: 1 profiel per rij */
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.profile {
+  text-align: center;
+}
+
+/* Alle afbeeldingen dezelfde grootte met blur */
+.grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, filter 0.3s ease;
+  filter: blur(4px);
+}
+
+.grid img:hover {
+  transform: scale(1.05);
+  filter: blur(0);
+}
+
+.profile p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #1b263b;
+  text-align: center;
+}
+
+/* Responsive vanaf medium schermen */
+@media (min-width: 481px) {
+  header {
+    padding: 1.5rem 2rem;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  nav button {
+    width: auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid img {
+    height: 200px;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
